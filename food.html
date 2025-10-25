@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Foods from Around the World</title>
+  <style>
+    /* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #a554b9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #a554b9;
+}
+
+.food-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.food-item {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.food-info {
+  flex: 1;
+}
+
+.food-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.food-item p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #a554b9;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore Famous Foods from Different Places</h1>
+    <nav>
+      <ul>
+        <li><a href="#india">India</a></li>
+        <li><a href="#france">France</a></li>
+        <li><a href="#italy">Italy</a></li>
+        <li><a href="#korea">Korea</a></li>
+        <li><a href="#russia">Russia</a></li>
+        <li><a href="#malaysia">Malaysia</a></li>
+        <li><a href="#Switzerland">Switzerland</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+        <section id="italy">
+            <h2>Italy</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/I3.jpg" alt="Pizza">
+                <div class="food-info">
+                  <h3>Pizza</h3>
+                  <p>Classic Italian pizza with various toppings.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I4.jpeg" alt="Pasta">
+                <div class="food-info">
+                  <h3>Pasta</h3>
+                  <p>Different types like spaghetti, fettuccine, and ravioli.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I5.jpeg" alt="Gelato">
+                <div class="food-info">
+                  <h3>Gelato</h3>
+                  <p>Italian ice cream with rich and creamy flavors.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I1.jpeg" alt="Lasagna">
+                <div class="food-info">
+                  <h3>Lasagna</h3>
+                  <p>Layered pasta with meat, cheese, and sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I2.jpeg" alt="Cannoli">
+                <div class="food-info">
+                  <h3>Cannoli</h3>
+                  <p>Fried pastry filled with sweet ricotta cheese.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I6.webp" alt="Risotto">
+                <div class="food-info">
+                  <h3>Risotto</h3>
+                  <p>Creamy rice dish often flavored with saffron and seafood.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I7.webp" alt="Prosciutto">
+                <div class="food-info">
+                  <h3>Prosciutto</h3>
+                  <p>Thinly sliced cured ham, often served with melon or bread.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I8.jpeg" alt="Frittata">
+                <div class="food-info">
+                  <h3>Frittata</h3>
+                  <p>Italian-style omelette filled with vegetables or meats.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I9.jpeg" alt="Panettone">
+                <div class="food-info">
+                  <h3>Panettone</h3>
+                  <p>Sweet Italian bread loaf, typically enjoyed at Christmas.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I10.jpg" alt="Porchetta">
+                <div class="food-info">
+                  <h3>Porchetta</h3>
+                  <p>Roasted pork with a crispy, flavorful skin, often served in sandwiches.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I11.jpeg" alt="Arancini">
+                <div class="food-info">
+                  <h3>Arancini</h3>
+                  <p>Fried rice balls stuffed with cheese, meat, or vegetables.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/I12.jpeg" alt="Bruschetta">
+                <div class="food-info">
+                  <h3>Bruschetta</h3>
+                  <p>Grilled bread topped with tomatoes, basil, and olive oil.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+      
+
+          <section id="korea">
+            <h2>Korea</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/k1.jpeg" alt="Bibimbap">
+                <div class="food-info">
+                  <h3>Bibimbap</h3>
+                  <p>Rice mixed with vegetables, meat, egg, and spicy gochujang sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k2.jpg" alt="Kimchi">
+                <div class="food-info">
+                  <h3>Kimchi</h3>
+                  <p>Fermented vegetables, usually cabbage, with chili and garlic.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k3.webp" alt="Ramyeon">
+                <div class="food-info">
+                  <h3>Ramyeon</h3>
+                  <p>Korean instant noodles served with broth and toppings.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k4.jpeg" alt="Bulgogi">
+                <div class="food-info">
+                  <h3>Bulgogi</h3>
+                  <p>Grilled marinated beef with a sweet and savory sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k5.jpg" alt="Kimchi Jjigae">
+                <div class="food-info">
+                  <h3>Kimchi Jjigae</h3>
+                  <p>A spicy stew made with kimchi, tofu, and pork or tuna.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k6.jpeg" alt="Tteokbokki">
+                <div class="food-info">
+                  <h3>Tteokbokki</h3>
+                  <p>Spicy stir-fried rice cakes in a sweet and savory sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k7.jpeg" alt="Jeon">
+                <div class="food-info">
+                  <h3>Jeon</h3>
+                  <p>Korean savory pancakes made with vegetables or seafood.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k8.jpg" alt="Samgyeopsal">
+                <div class="food-info">
+                  <h3>Samgyeopsal</h3>
+                  <p>Grilled pork belly served with lettuce, garlic, and ssamjang.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k9.jpg" alt="Hoddeok">
+                <div class="food-info">
+                  <h3>Hoddeok</h3>
+                  <p>Sweet pancakes filled with brown sugar, cinnamon, and nuts.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k10.jpg" alt="Galbitang">
+                <div class="food-info">
+                  <h3>Galbitang</h3>
+                  <p>Beef short rib soup served with a light broth and rice.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k11.jpeg" alt="Soondubu">
+                <div class="food-info">
+                  <h3>Soondubu</h3>
+                  <p>Soft tofu stew with seafood or meat, served with spicy broth.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/k12.jpeg" alt="Japchae ">
+                <div class="food-info">
+                  <h3>Japchae</h3>
+                  <p> Stir-fried glass noodles with vegetables, often including beef or pork.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="india">
+            <h2>India</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/in1.jpg" alt="Butter Chicken">
+                <div class="food-info">
+                  <h3>Butter Chicken</h3>
+                  <p>A creamy and flavorful chicken curry.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in2.jpeg" alt="Samosa">
+                <div class="food-info">
+                  <h3>Samosa</h3>
+                  <p>Fried pastry filled with spiced potatoes and peas.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in3.jpg" alt="Chole Bhature">
+                <div class="food-info">
+                  <h3>Chole Bhature</h3>
+                  <p>Spicy chickpea curry with deep-fried bread.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in4.jpg" alt="Biryani">
+                <div class="food-info">
+                  <h3>Biryani</h3>
+                  <p>Aromatic rice dish with meat, spices, and herbs.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in5.jpg" alt="Palak Paneer">
+                <div class="food-info">
+                  <h3>Palak Paneer</h3>
+                  <p>Cottage cheese in a smooth spinach gravy.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in6.jpeg" alt="Dosa">
+                <div class="food-info">
+                  <h3>Dosa</h3>
+                  <p>Crispy rice crepe served with chutneys and sambar.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in7.jpg" alt="Rogan Josh">
+                <div class="food-info">
+                  <h3>Rogan Josh</h3>
+                  <p>Slow-cooked lamb in a rich and aromatic gravy.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in8.webp" alt="Daal Tadka">
+                <div class="food-info">
+                  <h3>Daal Tadka</h3>
+                  <p>Spiced lentils cooked with tempering of garlic, cumin, and ghee.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in9.jpg" alt="Pav Bhaji">
+                <div class="food-info">
+                  <h3>Pav Bhaji</h3>
+                  <p>Spicy mashed vegetable curry served with buttered bread rolls.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in10.webp" alt="Khichdi">
+                <div class="food-info">
+                  <h3>Khichdi</h3>
+                  <p>A comforting dish made with rice and lentils.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in11.jpeg" alt="Seekh Kebab">
+                <div class="food-info">
+                  <h3>Seekh Kebab</h3>
+                  <p>Minced meat skewers spiced with aromatic herbs and grilled.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/in12.jpg" alt="Gulab Jamun">
+                <div class="food-info">
+                  <h3>Gulab Jamun</h3>
+                  <p>Sweet, deep-fried dough balls soaked in sugar syrup.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+          <section id="france">
+            <h2>France</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/f1.jpg" alt="Baguette">
+                <div class="food-info">
+                  <h3>Baguette</h3>
+                  <p>Classic French long loaf bread, often served with cheese or butter.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f2.jpg" alt="Croissant">
+                <div class="food-info">
+                  <h3>Croissant</h3>
+                  <p>Buttery, flaky pastry often enjoyed at breakfast.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f3.jpeg" alt="Coq au Vin">
+                <div class="food-info">
+                  <h3>Coq au Vin</h3>
+                  <p>Chicken braised in red wine with mushrooms, onions, and garlic.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f4.jpeg" alt="Ratatouille">
+                <div class="food-info">
+                  <h3>Ratatouille</h3>
+                  <p>Vegetable stew with eggplant, zucchini, and tomatoes.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f5.jpeg" alt="Escargots de Bourgogne">
+                <div class="food-info">
+                  <h3>Escargots de Bourgogne</h3>
+                  <p>Snails cooked in garlic, butter, and parsley.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f6.jpg" alt="Quiche Lorraine">
+                <div class="food-info">
+                  <h3>Quiche Lorraine</h3>
+                  <p>A savory pie with eggs, cheese, and bacon.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f7.jpg" alt="Bouillabaisse">
+                <div class="food-info">
+                  <h3>Bouillabaisse</h3>
+                  <p>Seafood stew from Marseille, made with fish, shellfish, and vegetables.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f8.jpeg" alt="Duck Confit">
+                <div class="food-info">
+                  <h3>Duck Confit</h3>
+                  <p>Slow-cooked duck legs crispy on the outside and tender on the inside.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f9.jpeg" alt="Tarte Tatin">
+                <div class="food-info">
+                  <h3>Tarte Tatin</h3>
+                  <p>An upside-down caramelized apple tart.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f10.jpg" alt="Crepes">
+                <div class="food-info">
+                  <h3>Crêpes</h3>
+                  <p>Thin pancakes filled with a variety of sweet or savory ingredients.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f11.jpg" alt="French Onion Soup">
+                <div class="food-info">
+                  <h3>French Onion Soup</h3>
+                  <p>Caramelized onions in broth, topped with cheese and toasted bread.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/f12.jpeg" alt="Tarte Aux Fruits">
+                <div class="food-info">
+                  <h3>Tarte Aux Fruits</h3>
+                  <p>Classic French fruit tart made with fresh seasonal fruits and pastry cream.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="russia">
+            <h2>Russia</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/r1.jpg" alt="Borscht">
+                <div class="food-info">
+                  <h3>Borscht</h3>
+                  <p>Traditional beet soup served hot or cold, often with sour cream and dill.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r2.jpg" alt="Blini">
+                <div class="food-info">
+                  <h3>Blini</h3>
+                  <p>Thin pancakes served with sour cream, caviar, or jam.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r3.jpg" alt="Pelmeni">
+                <div class="food-info">
+                  <h3>Pelmeni</h3>
+                  <p>Russian dumplings filled with minced meat and served with butter or sour cream.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r4.jpg" alt="Beef Stroganoff">
+                <div class="food-info">
+                  <h3>Beef Stroganoff</h3>
+                  <p>Sauteed beef in a creamy sauce, often served with mashed potatoes or rice.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r5.jpg" alt="Pirozhki">
+                <div class="food-info">
+                  <h3>Pirozhki</h3>
+                  <p>Small pastries filled with various ingredients like meat, cabbage, or potatoes.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r6.jpg" alt="Kholodets">
+                <div class="food-info">
+                  <h3>Kholodets</h3>
+                  <p>Jellied meat dish made from pork or beef, often served cold with horseradish.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r7.jpeg" alt="Shchi">
+                <div class="food-info">
+                  <h3>Shchi</h3>
+                  <p>Traditional Russian cabbage soup, often served with sour cream and rye bread.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r8.jpg" alt="Solyanka">
+                <div class="food-info">
+                  <h3>Solyanka</h3>
+                  <p>A hearty, sour soup made with a mix of meats, vegetables, and brine.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r9.webp" alt="Kvass">
+                <div class="food-info">
+                  <h3>Kvass</h3>
+                  <p>A fermented beverage made from rye bread, with a mildly alcoholic content.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r10.jpeg" alt="Caviar">
+                <div class="food-info">
+                  <h3>Caviar</h3>
+                  <p>Fish roe, often served with blini, butter, or crackers.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r11.jpeg" alt="Vareniki">
+                <div class="food-info">
+                  <h3>Vareniki</h3>
+                  <p>Dumplings filled with various fillings like potatoes, cherries, or cheese.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/r12.jpeg" alt="Kissel">
+                <div class="food-info">
+                  <h3>Kissel</h3>
+                  <p>A sweet fruit-based drink or dessert, often thickened with starch.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+          <section id="switzerland">
+            <h2>Switzerland</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/s1.jpg" alt="Fondue">
+                <div class="food-info">
+                  <h3>Fondue</h3>
+                  <p>Classic Swiss dish of melted cheese served with bread, potatoes, or vegetables for dipping.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s2.jpg" alt="Rösti">
+                <div class="food-info">
+                  <h3>Rösti</h3>
+                  <p>Swiss-style crispy potato dish, often served for breakfast or as a side.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s3.jpg" alt="Swiss Chocolate">
+                <div class="food-info">
+                  <h3>Swiss Chocolate</h3>
+                  <p>Famous for its high quality, Swiss chocolate is a delicious treat loved worldwide.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s4.jpg" alt="Zürcher Geschnetzeltes">
+                <div class="food-info">
+                  <h3>Zürcher Geschnetzeltes</h3>
+                  <p>Veal sliced thinly and served in a creamy white wine and mushroom sauce, traditionally from Zurich.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s5.jpeg" alt="Lutefisk">
+                <div class="food-info">
+                  <h3>Lutefisk</h3>
+                  <p>A traditional Swiss fish dish, made by preserving cod in a lye solution and then rehydrating it before cooking.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s6.jpg" alt="Basler Läckerli">
+                <div class="food-info">
+                  <h3>Basler Läckerli</h3>
+                  <p>Traditional chewy biscuit from Basel, made with honey, almonds, and kirsch.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s7.jpg" alt="Älplermagronen">
+                <div class="food-info">
+                  <h3>Älplermagronen</h3>
+                  <p>A hearty Swiss dish of pasta, potatoes, cheese, and cream, often served with applesauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s8.jpg" alt="Swiss Pastry">
+                <div class="food-info">
+                  <h3>Swiss Pastry</h3>
+                  <p>Delicate pastries such as Nusstorte, a nut-filled dessert popular in the Engadine region.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s9.jpg" alt="Swiss Muesli">
+                <div class="food-info">
+                  <h3>Swiss Muesli</h3>
+                  <p>Healthy breakfast dish made of rolled oats, fruit, nuts, and yogurt or milk.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s10.jpg" alt="Tartes des Alpes">
+                <div class="food-info">
+                  <h3>Tartes des Alpes</h3>
+                  <p>Sweet Swiss tart made with alpine fruits such as apples and berries.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s11.jpg" alt="Raclette">
+                <div class="food-info">
+                  <h3>Raclette</h3>
+                  <p>A Swiss dish where melted cheese is scraped over potatoes, pickles, onions, and cured meats.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/s12.jpg" alt="Chasselas Wine">
+                <div class="food-info">
+                  <h3>Chasselas Wine</h3>
+                  <p>Swiss white wine made from the Chasselas grape, often enjoyed with Swiss dishes like Fondue.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section id="malaysia">
+            <h2>Malaysia</h2>
+            <div class="food-list">
+              <div class="food-item">
+                <img src="images/foods/m1.jpg" alt="Nasi Lemak">
+                <div class="food-info">
+                  <h3>Nasi Lemak</h3>
+                  <p>Considered the national dish of Malaysia, Nasi Lemak consists of rice cooked in coconut milk, served with sambal, fried anchovies, hard-boiled egg, and cucumber.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m2.jpg" alt="Char Kway Teow">
+                <div class="food-info">
+                  <h3>Char Kway Teow</h3>
+                  <p>A popular stir-fried noodle dish made with flat rice noodles, prawns, eggs, and bean sprouts, cooked with a savory soy sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m3.jpg" alt="Satay">
+                <div class="food-info">
+                  <h3>Satay</h3>
+                  <p>Grilled skewers of marinated meat (usually chicken, beef, or lamb) served with a creamy peanut dipping sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m4.jpg" alt="Laksa">
+                <div class="food-info">
+                  <h3>Laksa</h3>
+                  <p>A spicy noodle soup made with either a creamy coconut base or a tangy tamarind base, often served with shrimp, fish, or chicken.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m5.jpg" alt="Roti Canai">
+                <div class="food-info">
+                  <h3>Roti Canai</h3>
+                  <p>A flaky, crispy flatbread, often served with dhal (lentil curry) or a meat curry.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m6.jpg" alt="Hainanese Chicken Rice">
+                <div class="food-info">
+                  <h3>Hainanese Chicken Rice</h3>
+                  <p>A simple yet delicious dish of poached chicken served with fragrant rice cooked in chicken broth, along with chili and ginger sauce.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m7.jpeg" alt="Mee Goreng Mamak">
+                <div class="food-info">
+                  <h3>Mee Goreng Mamak</h3>
+                  <p>A stir-fried noodle dish with a unique blend of spices, tofu, vegetables, and optional meat, commonly served by Mamak stalls in Malaysia.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m8.jpeg" alt="Nasi Goreng">
+                <div class="food-info">
+                  <h3>Nasi Goreng</h3>
+                  <p>Fried rice typically served with egg, vegetables, and sometimes meat or seafood, often accompanied by sambal or pickles.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m9.jpg" alt="Teh Tarik">
+                <div class="food-info">
+                  <h3>Teh Tarik</h3>
+                  <p>Malaysia's beloved "pulled tea," made by pouring the tea back and forth between two containers to create a frothy texture.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m10.jpg" alt="Banana Leaf Rice">
+                <div class="food-info">
+                  <h3>Banana Leaf Rice</h3>
+                  <p>A traditional South Indian-inspired dish served on a banana leaf, usually consisting of rice, curry, vegetables, and papadum.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m11.webp" alt="Kuih">
+                <div class="food-info">
+                  <h3>Kuih</h3>
+                  <p>Traditional Malaysian sweet and savory treats, often made from rice flour, coconut, or glutinous rice, and flavored with pandan or coconut milk.</p>
+                </div>
+              </div>
+              <div class="food-item">
+                <img src="images/foods/m12.jpg" alt="Cendol">
+                <div class="food-info">
+                  <h3>Cendol</h3>
+                  <p>A refreshing dessert made with shaved ice, coconut milk, palm sugar, and green rice flour jelly, often enjoyed on hot days.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Explore Escapes</p>
+  </footer>
+</body>
+</html>

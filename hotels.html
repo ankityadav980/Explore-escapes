@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Hotel</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 120%;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Hotel Cards Container */
+.hotels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hotel Card */
+.hotel-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.02);
+}
+
+/* Hotel Image */
+.hotel-image {
+    padding: 1rem;
+    width: 300px;
+    height: 250px;
+    object-fit:cover;
+}
+
+/* Hotel Details */
+.hotel-details {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+/* Hotel Info */
+.hotel-info h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+.hotel-info p {
+    margin: 0;
+}
+
+/* Rating System */
+.hotel-rating {
+    text-align: left;
+}
+
+.rating-select {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #a554b9;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header style="background-color: rgb(248, 173, 112);">
+        <h1>INDIA</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/1.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Chandy's Windy Woods</h2></i>
+                    <p>Nestled amidst the lush greenery of Kerala’s pristine landscape, Chandy's Windy Woods offers an enchanting escape into nature's lap. Surrounded by mist-clad hills and serene tea plantations, this luxurious retreat seamlessly blends modern comfort with nature's beauty. Whether it's the tranquil sounds of rustling leaves, the cozy charm of its eco-friendly cottages, or the invigorating aroma of fresh mountain air, every moment here promises relaxation and rejuvenation. Experience the perfect harmony of elegance and wilderness, all at Chandy's Windy Woods.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b> </label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/2.avif" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Jw Marriott Hotel</h2></i>
+                    <p>Nestled in the heart of Pune, JW Marriott Hotel is a blend of luxury and sophistication. This 5-star property offers world-class amenities, including plush accommodations, exquisite dining options, and a rooftop bar with panoramic city views. Perfect for both business and leisure travelers, the hotel also features a tranquil spa, modern fitness facilities, and spacious event venues. With its impeccable service and elegant design, JW Marriott Hotel Pune delivers an unforgettable experience.
+
+                    </p>
+             </div>
+             &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/3.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Taj West End</h2></i>
+                    <p>Experience the blend of timeless elegance and modern luxury at the Taj West End. Nestled amidst lush gardens in the heart of Bengaluru, this iconic hotel combines colonial charm with world-class amenities. Known for its heritage architecture, impeccable hospitality, and serene environment, the Taj West End offers a tranquil retreat from the bustling city while being centrally located. Perfect for both business and leisure travelers, this property embodies the spirit of India's Garden City.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b> </label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/4.webp" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Trident</h2></i>
+                    <p>Nestled on the banks of Lake Pichola, Trident Udaipur offers a blend of luxury and heritage. Surrounded by lush gardens, this elegant hotel showcases traditional Rajasthani architecture with modern amenities. Guests can enjoy serene lake views, exceptional dining experiences, and warm hospitality in the "City of Lakes."</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/5.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <h2>Sheraton Hyderabad Hotel</h2>
+                    <p>Located in the heart of Hyderabad's bustling financial district, Sheraton Hyderabad Hotel offers a luxurious and modern retreat. With spacious rooms, world-class dining options, and exceptional service, the hotel provides the perfect blend of comfort and convenience. Guests can enjoy its state-of-the-art fitness center, serene spa, and outdoor pool, making it ideal for both business and leisure travelers. Its proximity to major attractions like Gachibowli Stadium and HITEC City ensures an enriching stay for all visitors.
+
+                    </p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgb(238, 159, 252);">
+        <h1>FRANCE</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/6.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Malte - Astotel</h2></i>
+                    <p>Nestled in the heart of Paris, Hotel Malte is a charming boutique hotel offering elegant accommodations with a blend of classic Parisian style and modern comfort. Located just steps from the Palais Royal and the Louvre, this 4-star establishment provides a tranquil retreat with personalized service, beautifully designed interiors, and complimentary refreshments in the Astotel open bar.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/7.jpg" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2> Hotel des Arts - Montmartre</h2></i>
+                    <p>Nestled in the heart of the iconic Montmartre district, this charming hotel blends Parisian elegance with artistic flair. With its cozy ambiance, breathtaking views of the Sacré-Cœur and city rooftops, and personalized service, it's the perfect retreat for art lovers and travelers seeking a true Parisian experience.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/8.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                   <i><h2> Hotel de Londres Eiffel</h2></i>
+                    <p>Nestled in the heart of Paris, the Hotel de Londres Eiffel offers a charming blend of elegance and modern comfort. Located just steps away from the iconic Eiffel Tower, this boutique hotel provides guests with a prime location to explore the city’s top attractions. With its contemporary decor, cozy rooms, and exceptional service, the hotel is a perfect choice for both leisure and business travelers. Enjoy breathtaking views of the Eiffel Tower, as well as proximity to the Seine River, museums, and vibrant Parisian neighborhoods. Whether you're visiting for the sights or the ambiance, the Hotel de Londres Eiffel promises an unforgettable stay.
+
+                    </p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/9.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Le Negresco</h2></i>
+                    <p>Hotel Le Negresco, an emblem of luxury and sophistication on the French Riviera, combines rich history with modern comforts.The hotel offers world-class dining options, including a Michelin-starred restaurant, and panoramic views of the Mediterranean Sea. With its iconic pink dome and opulent interiors featuring priceless art, this national historic monument offers a truly unique and unforgettable experience in the heart of Nice.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/10.webp" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Disney's Hotel Cheyenne</h2></i>
+                    <p>Experience the charm of the Wild West at Disney's Hotel Cheyenne! With its rustic frontier-themed design, saloon-style decor, and cozy accommodations, this family-friendly hotel transports guests to the heart of cowboy country. Located just minutes from Disneyland Paris, it offers an immersive Western adventure for all ages.
+
+                    </p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgb(144, 222, 243);">
+        <h1>ITALY</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/11.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Artemide</h2></i>
+                    <p>Hotel Artemide, located in the heart of Rome, Italy, offers a perfect blend of luxury, comfort, and historical charm. This elegant 4-star hotel is known for its beautifully designed rooms, excellent service, and a rooftop terrace with stunning views of the Eternal City. Guests can enjoy gourmet Italian cuisine at the Ambrosia Restaurant & Bar, or unwind at the Artemís Spa. Its central location makes it a convenient base to explore iconic landmarks like the Colosseum, Trevi Fountain, and Spanish Steps. Ideal for both leisure and business travelers.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/12.jpg" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Saturnia & International Venezia</h2></i>
+                    <p>Hotel Saturnia & International, nestled in the heart of Venice, combines timeless Venetian elegance with modern luxury. Just steps away from St. Mark’s Square, this historic hotel, established in 1908, offers guests a refined blend of classic architecture and contemporary comfort. Renowned for its warm hospitality and the celebrated La Caravella restaurant, it provides an authentic Venetian experience. Enjoy stunning city views, stylish accommodations, and convenient access to Venice's iconic attractions. A perfect retreat for travelers seeking history, charm, and sophistication in the enchanting canals of Venice.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/13.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Lungarno</h2></i>
+                    <p>Nestled along the Arno River, Hotel Lungarno is a luxurious boutique hotel offering stunning views of the iconic Ponte Vecchio. Combining elegant design with a curated collection of over 400 art pieces, this five-star gem captures the essence of Florentine charm and sophistication. Perfect for travelers seeking exceptional service and a blend of culture and comfort in the heart of Florence.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/14.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Antiche Figure</h2></i>
+                    <p>Located along the Grand Canal, Hotel Antiche Figure offers an enchanting blend of historical charm and modern comfort. This boutique hotel features elegant Venetian-style rooms with views of the canal or the city’s timeless architecture. Conveniently situated near Santa Lucia Train Station, it’s the perfect base for exploring Venice’s iconic landmarks, including St. Mark’s Square and the Rialto Bridge. Guests enjoy warm hospitality, a cozy bar, and a tranquil ambiance steeped in history</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/15.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Grand Hotel La Favorita</h2></i>
+                    <p>Located in the heart of Sorrento, the Grand Hotel La Favorita is a stunning 5-star retreat blending timeless elegance with modern luxury. Perched above the Gulf of Naples, the hotel offers breathtaking views of Mount Vesuvius and the Mediterranean. Guests enjoy spacious, classically styled rooms, a rooftop terrace with an infinity pool, lush gardens, and easy access to Sorrento’s vibrant city center and historic attractions.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgba(106, 241, 136, 0.868);">
+        <h1>RUSSIA</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/16.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Helvetia</h2></i>
+                    <p>Set in the heart of St. Petersburg, the Helvetia Hotel offers a blend of historic charm and modern luxury. Housed in a classic 19th-century building, this 4-star hotel features elegant rooms with a refined design, top-notch amenities, and personalized service. Guests can enjoy a welcoming atmosphere, exquisite dining, and easy access to the city's iconic landmarks, including the Hermitage Museum, Nevsky Prospect, and the stunning canals of St. Petersburg.</p>
+                </div>
+                &nbsp;;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/17.jpg" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Lotte Hotel Moscow</h2></i>
+                    <p>Situated in the heart of Moscow, Lotte Hotel Moscow is a luxurious 5-star hotel offering refined elegance and exceptional service. With its prime location on Novinsky Boulevard, the hotel provides stunning views of the Kremlin and Red Square. Guests can enjoy spacious, stylish rooms and suites, world-class dining options, a luxurious spa, and a rooftop bar with panoramic views of the city. A perfect blend of modern sophistication and Russian hospitality, Lotte Hotel Moscow is ideal for both business and leisure travelers.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/18.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Ramada Kazan City Centre</h2></i>
+                    <p>Ideally situated in the heart of Kazan, the Ramada Kazan City Centre offers a perfect blend of comfort and convenience for both business and leisure travelers. This 4-star hotel features contemporary rooms equipped with modern amenities, a well-appointed fitness center, and a stylish restaurant serving local and international cuisine. Its prime location provides easy access to Kazan’s historical landmarks, cultural attractions, and vibrant city life, making it an ideal base for exploring the city.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/19.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Astoria</h2></i>
+                    <p>Hotel Astoria, a historic 5-star hotel located in the heart of St. Petersburg, combines classic Russian opulence with modern comforts. Overlooking the iconic St. Isaac’s Cathedral, the hotel offers luxurious rooms and suites with elegant décor, exceptional dining options, and world-class service. Guests can enjoy its prime location near the Hermitage Museum, the Nevsky Prospect, and other major cultural landmarks. Renowned for its rich history and refined atmosphere, the Hotel Astoria is a symbol of St. Petersburg’s grandeur.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/20.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Nevsky Forum</h2></i>
+                    <p>Ideally located on the iconic Nevsky Prospect, Nevsky Forum Hotel offers a perfect blend of modern luxury and classic Russian hospitality. This 4-star hotel is within walking distance of major attractions like the Hermitage Museum, Kazan Cathedral, and the Neva River. Featuring stylish rooms, contemporary amenities, and impeccable service, it provides a comfortable and sophisticated stay for both business and leisure travelers in the heart of St. Petersburg.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgb(248, 128, 134);">
+        <h1>TURKEY</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/21.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Divan Cave Hotel</h2></i>
+                    <p>Nestled in the heart of Cappadocia, Divan Cave Hotel offers a unique and luxurious experience in a stunning cave setting. Combining traditional stone architecture with modern comforts, the hotel provides guests with spacious cave rooms, many featuring breathtaking views of the fairy chimneys and surrounding valleys. With exceptional service, an outdoor terrace, and a serene atmosphere, Divan Cave Hotel is the perfect base for exploring the region’s surreal landscapes, ancient history, and vibrant culture.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/22.jpg" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Rixos Premium Belek - The Land Of Legends Access</h2></i>
+                    <p>Rixos Premium Belek offers a world of luxury and excitement, perfectly situated in the heart of Belek along the stunning Turkish Riviera. This 5-star resort offers exclusive access to The Land of Legends Theme Park, making it a dream destination for families and adventure seekers. Guests enjoy spacious, elegantly designed rooms, a wide range of gourmet dining options, a luxurious spa, and an impressive selection of outdoor activities. With its private beach, water sports, and vibrant entertainment options, Rixos Premium Belek is the ultimate getaway for relaxation and fun.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/23.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Conrad Istanbul Bosphorus</h2></i>
+                    <p>Conrad Istanbul Bosphorus is a luxurious 5-star hotel that offers a perfect blend of modern sophistication and Turkish charm. Located in the vibrant Beşiktaş district, it features spacious rooms and suites with panoramic views of the Bosphorus, the city skyline, and historical landmarks. Guests can indulge in world-class dining, relax at the spa, or unwind by the outdoor pool. The hotel’s central location offers easy access to Istanbul’s iconic attractions, including Dolmabahçe Palace and the lively shopping districts.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/24.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2> Divan Ankara</h2></i>
+                    <p>Located in the heart of Turkey’s capital, Divan Ankara offers a sophisticated blend of modern luxury and traditional Turkish hospitality. This 5-star hotel features spacious, stylish rooms with contemporary amenities, along with exquisite dining options and a full-service spa. Guests can enjoy easy access to key attractions such as the Kocatepe Mosque, Ankara Castle, and Atatürk's Mausoleum (Anıtkabir). With a central location and exceptional service, Divan Ankara is the perfect base for both business and leisure travelers.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/25.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Sultania</h2></i>
+                    <p>Hotel Sultania is a luxurious boutique hotel located in the heart of Istanbul’s Sultanahmet district, just steps from iconic landmarks such as the Blue Mosque and Hagia Sophia. Combining traditional Ottoman design with modern comforts, the hotel offers elegantly appointed rooms and suites, featuring intricate details and opulent decor. Guests can indulge in world-class amenities, including a rooftop terrace with stunning views, a spa, and a restaurant serving exquisite Turkish cuisine, making it the perfect base for exploring the rich cultural heritage of Istanbul.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgb(255, 251, 122);">
+        <h1>MALAYSIA</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/26.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Pacific Sutera Hotel</h2></i>
+                    <p>The Pacific Sutera Hotel, a luxury resort in the heart of Kota Kinabalu, offers a perfect blend of modern comfort and traditional Malaysian hospitality. Situated along the serene waterfront, the hotel features stunning views of the South China Sea and lush surrounding landscapes. Guests can enjoy spacious rooms, a variety of dining options, an 18-hole golf course, and a range of leisure facilities, including a swimming pool, spa, and fitness center. With easy access to shopping, cultural attractions, and outdoor adventures, it’s an ideal destination for both relaxation and exploration.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/27.jpg" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Shangri-La Hotel</h2></i>
+                    <p>Situated in the heart of Kuala Lumpur, The Shangri-La Hotel offers a luxurious escape with impeccable service and world-class amenities. Surrounded by lush gardens and towering skyscrapers, the hotel provides a serene retreat while being just minutes away from the city's vibrant shopping, dining, and cultural attractions. Guests can indulge in spacious, elegantly designed rooms, award-winning dining experiences, and rejuvenating spa treatments. With its exceptional hospitality, The Shangri-La ensures a memorable stay for both business and leisure travelers.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/28.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hard Rock Hotel Penang</h2></i>
+                    <p>Located on the pristine beaches of Batu Ferringhi, the Hard Rock Hotel Penang offers an exciting, music-infused stay with a vibrant atmosphere. This 5-star resort features stylish rooms and suites, an impressive lagoon pool with water slides, a world-class spa, and a variety of dining options. Guests can enjoy the hotel's signature rock ‘n’ roll vibe, with memorabilia from legendary artists and live performances. Perfect for families, couples, and music lovers, the Hard Rock Hotel Penang delivers both relaxation and entertainment in a tropical paradise.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/29.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Eastern & Oriental Hotel</h2></i>
+                    <p>The Eastern & Oriental Hotel, a historic 5-star property in the heart of George Town, Penang, exudes colonial charm and sophistication. Overlooking the Andaman Sea, this iconic hotel blends timeless elegance with modern luxury. Guests can enjoy spacious, beautifully appointed suites, world-class dining, and a relaxing atmosphere with stunning sea views. Steeped in history, the hotel is a short stroll from the city’s UNESCO World Heritage sites, offering both a tranquil escape and easy access to Penang’s rich culture and vibrant streets.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/30.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hilton Kuala Lumpur</h2></i>
+                    <p>Situated in the heart of Malaysia's bustling capital, the Hilton Kuala Lumpur offers a luxurious escape with unparalleled views of the city skyline. This 5-star hotel features spacious, modern rooms, a wide range of dining options, and world-class amenities, including an outdoor pool, a fitness center, and a full-service spa. Its prime location provides easy access to Kuala Lumpur’s top attractions, including the Petronas Twin Towers and the Central Market, making it an ideal destination for both business and leisure travelers.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3">Rating: </label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header style="background-color: rgb(250, 144, 204);">
+        <h1>SWITZERLAND</h1>
+    </header>
+    <main class="hotels-container">
+        <!-- Hotel Card 1 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/31.jpg" alt="Hotel 1" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Bio GAIA Hotel Basel</h2></i>
+                    <p>Situated in the heart of Basel, Bio GAIA Hotel offers a sustainable and eco-friendly stay with a focus on comfort and wellness. As a certified organic hotel, it provides a serene atmosphere, featuring natural materials, organic food, and environmentally conscious practices. The hotel’s modern, minimalist design and peaceful surroundings make it an ideal choice for eco-conscious travelers. Located near the city’s cultural landmarks and the River Rhine, Bio GAIA offers an authentic and responsible Swiss hospitality experience.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating1"><b>Rating:</b></label>
+                    <select id="rating1" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/32.webp" alt="Hotel 2" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hôtel Bristol Genève</h2></i>
+                    <p>Located in the heart of Geneva, the Hôtel Bristol Genève offers a refined and luxurious experience with unparalleled service. Just steps away from Lake Geneva and the city’s top attractions, this elegant 5-star hotel boasts beautifully appointed rooms, exquisite dining options, and a chic, sophisticated ambiance. With its blend of classic European charm and modern amenities, the hotel provides guests with a perfect base for both relaxation and exploration in one of Switzerland’s most cosmopolitan cities.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating2"><b>Rating:</b></label>
+                    <select id="rating2" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="hotel-card">
+            <img src="images/hotels/pics/33.jpg" alt="Hotel 3" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2> Hotel Belvedere Grindelwald </h2></i>
+                    <p>Hotel Belvedere offers a serene alpine escape in Grindelwald. This 4-star hotel boasts panoramic views of the Eiger Mountain and a blend of traditional Swiss charm with contemporary comfort. Guests can unwind in stylish rooms and suites, indulge in wellness facilities, and enjoy exquisite dining. With easy access to hiking trails, ski slopes, and the picturesque village, Hotel Belvedere is the perfect base for both adventure and relaxation in the heart of the Swiss Alps.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/34.jpg" alt="Hotel 4" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Royal Savoy Lausanne</h2></i>
+                    <p>Situated in the heart of Lausanne, Hotel Royal Savoy is a luxurious 5-star hotel offering a blend of historic grandeur and contemporary sophistication. Overlooking the serene Lake Geneva and the Alps, the hotel features elegant rooms and suites with stunning views. Guests can indulge in fine dining at the hotel's restaurant, unwind in the stylish spa, or enjoy a cocktail on the panoramic terrace. With its central location, the Royal Savoy provides easy access to Lausanne’s cultural landmarks and the surrounding natural beauty.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="images/hotels/pics/35.jpg" alt="Hotel 5" class="hotel-image">
+            <div class="hotel-details">
+                <div class="hotel-info">
+                    <i><h2>Hotel Roessli</h2></i>
+                    <p>Nestled in the picturesque city of Lucerne, Hotel Roessli is a charming 3-star boutique hotel offering a cozy and welcoming atmosphere. Located just a short walk from Lake Lucerne and the city center, this family-owned hotel combines traditional Swiss hospitality with modern comforts. Guests can enjoy stylish rooms with stunning mountain or lake views, a delightful breakfast buffet, and easy access to Lucerne's historic landmarks, making it an ideal base for exploring the region's natural beauty and cultural treasures.</p>
+                </div>
+                &nbsp;
+                <div class="hotel-rating">
+                    <label for="rating3"><b>Rating:</b></label>
+                    <select id="rating3" class="rating-select">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Explore Escapes</p>
+      </footer>
+    
+</body>
+</html>

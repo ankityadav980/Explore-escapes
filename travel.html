@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastest Travel Routes</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #c545d3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.country {
+    background-color: rgb(230, 204, 255);
+    width: 45%;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.routes {
+    display: flex;
+    flex-direction: column;
+}
+
+.route {
+    margin-bottom: 20px;
+}
+
+.route p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #c545d3;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fastest Travel Routes Around the World</h1>
+        <p>Discover the quickest travel routes between major cities</p>
+    </header>
+    <section class="countries">
+        <div class="country">
+            <h2>India</h2>
+            <div class="routes">
+                <div class="route">
+                    <p><strong>Delhi to Mumbai</strong>: 2 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>Delhi to Bangalore</strong>: 2.5 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>Chennai to Hyderabad</strong>: 1 hour 15 minutes by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>Mumbai to Pune</strong>: 1 hour by train</p>
+                </div>
+                <div class="route">
+                    <p><strong>Kolkata to Delhi</strong>: 2 hours by flight</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Country 1: United States -->
+        <div class="country">
+            <h2>United States</h2>
+            <div class="routes">
+                <div class="route">
+                    <p><strong>New York City to London</strong>: 7 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>New York City to Tokyo</strong>: 13 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>New York City to Paris</strong>: 8 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>Los Angeles to Vancouver</strong>: 2 hours by flight</p>
+                </div>
+                <div class="route">
+                    <p><strong>San Francisco to Honolulu</strong>: 5 hours by flight</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Country 2: United Kingdom -->
+<div class="country">
+    <h2>United Kingdom</h2>
+    <div class="routes">
+        <div class="route">
+            <p><strong>London to Berlin</strong>: 1.5 hours by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>London to Edinburgh</strong>: 1 hour by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>London to Paris</strong>: 2.5 hours by Eurostar train</p>
+        </div>
+        <div class="route">
+            <p><strong>London to Amsterdam</strong>: 1 hour by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>London to Barcelona</strong>: 2 hours by flight</p>
+        </div>
+    </div>
+</div>
+
+<!-- Country 3: Japan -->
+<div class="country">
+    <h2>Japan</h2>
+    <div class="routes">
+        <div class="route">
+            <p><strong>Tokyo to Osaka</strong>: 2.5 hours by Shinkansen</p>
+        </div>
+        <div class="route">
+            <p><strong>Tokyo to Hokkaido</strong>: 1 hour by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Tokyo to Kyoto</strong>: 2.5 hours by Shinkansen</p>
+        </div>
+        <div class="route">
+            <p><strong>Osaka to Hiroshima</strong>: 2 hours by Shinkansen</p>
+        </div>
+        <div class="route">
+            <p><strong>Fukuoka to Tokyo</strong>: 1.5 hours by flight</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Country 4: Australia -->
+<div class="country">
+    <h2>Australia</h2>
+    <div class="routes">
+        <div class="route">
+            <p><strong>Sydney to Melbourne</strong>: 1.5 hours by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Sydney to Brisbane</strong>: 1.5 hours by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Melbourne to Adelaide</strong>: 1.5 hours by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Sydney to Perth</strong>: 4 hours by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Brisbane to Gold Coast</strong>: 1 hour by flight</p>
+        </div>
+    </div>
+</div>
+    <!-- Country 1: France -->
+    <div class="country">
+        <h2>France</h2>
+        <div class="routes">
+            <div class="route">
+                <p><strong>Paris to Nice</strong>: 1 hour 30 minutes by flight</p>
+            </div>
+            <div class="route">
+                <p><strong>Paris to Marseille</strong>: 3 hours by TGV train</p>
+            </div>
+            <div class="route">
+                <p><strong>Paris to Lille</strong>: 35 minutes by TGV train</p>
+            </div>
+            <div class="route">
+                <p><strong>Paris to Lyon</strong>: 2 hours by TGV train</p>
+            </div>
+            <div class="route">
+                <p><strong>Nice to Toulouse</strong>: 1 hour 10 minutes by flight</p>
+            </div>
+        </div>
+    </div>
+
+        
+            <!-- Country 2: Germany -->
+<div class="country">
+    <h2>Germany</h2>
+    <div class="routes">
+        <div class="route">
+            <p><strong>Berlin to Munich</strong>: 1 hour 15 minutes by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Berlin to Frankfurt</strong>: 1 hour by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Berlin to Hamburg</strong>: 2.5 hours by train</p>
+        </div>
+        <div class="route">
+            <p><strong>Munich to Dresden</strong>: 4 hours by train</p>
+        </div>
+        <div class="route">
+            <p><strong>Frankfurt to Berlin</strong>: 2 hours by flight</p>
+        </div>
+    </div>
+</div>
+
+<!-- Country 3: Italy -->
+<div class="country">
+    <h2>Italy</h2>
+    <div class="routes">
+        <div class="route">
+            <p><strong>Rome to Milan</strong>: 1 hour 15 minutes by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Rome to Venice</strong>: 3.5 hours by train</p>
+        </div>
+        <div class="route">
+            <p><strong>Rome to Naples</strong>: 1 hour 10 minutes by flight</p>
+        </div>
+        <div class="route">
+            <p><strong>Florence to Pisa</strong>: 1 hour by train</p>
+        </div>
+        <div class="route">
+            <p><strong>Milan to Turin</strong>: 45 minutes by train</p>
+        </div>
+    </div>
+</div>
+
+</section>
+<footer>
+    <p>&copy; 2024 Explore Escapes</p>
+</footer>
+
+</body>
+</html>
